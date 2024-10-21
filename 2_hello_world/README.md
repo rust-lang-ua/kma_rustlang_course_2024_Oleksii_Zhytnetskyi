@@ -16,7 +16,7 @@ fn main() {
 
 ### 2 
 
-![Alt text](../assets/image.png)
+![Alt text](../assets/image-0.png)
 ### 3
 
 Далі ми спробуємо написати функцію та у цю функцію ми передами структуру `MyStruct`.
