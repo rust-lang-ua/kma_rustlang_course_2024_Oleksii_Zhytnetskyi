@@ -13,10 +13,14 @@
 2. **Додайте залежності в `Cargo.toml`**
    ```toml
    [dependencies]
-   serde = { version = "1.0", features = ["derive"] }
-   serde_json = "1.0"
-   serde_yaml = "0.8"
-   toml = "0.5"
+   chrono = { version = "0.4.38", features = ["serde"] }
+   humantime-serde = "1.1.1"
+   serde = { version = "1.0.214", features = ["derive"]}
+   serde_json = "1.0.132"
+   serde_yaml = "0.9.34"
+   toml = "0.8.19"
+   url = { version = "2.5.3", features = ["serde"] }
+   uuid = { version = "1.11.0", features = ["serde"] }
    ```
 
 ---
