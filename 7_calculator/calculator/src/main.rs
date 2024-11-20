@@ -1,9 +1,9 @@
-use pest::Parser;
-use std::io::BufRead;
-use std::io;
 use pest::iterators::Pairs;
 use pest::pratt_parser::PrattParser;
+use pest::Parser;
 use pest_derive::Parser;
+use std::io;
+use std::io::BufRead;
 
 #[derive(Parser)]
 #[grammar = "./grammar.pest"]
@@ -88,7 +88,6 @@ pub fn parse_expr(pairs: Pairs<Rule>) -> Expr {
             _ => unreachable!(),
         })
         .parse(pairs)
-
 }
 
 fn main() -> io::Result<()> {
@@ -105,4 +104,3 @@ fn main() -> io::Result<()> {
     }
     Ok(())
 }
-
